@@ -2,7 +2,7 @@ body{
     font-family: 'montserrat', sans-serif;
     background: url("SVG/background.svg");
     background-repeat: no-repeat;
-    background-size:1000px 1000px;
+    background-size: 1200px;
    height:100%;
     width:100%;
 }
