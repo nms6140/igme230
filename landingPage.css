@@ -71,7 +71,7 @@ div.projects{
     background-color:cornflowerblue;
     height: 100px;
     opacity:.7;
-    outline-color: aliceblue;
+    border: 5px solid white;
 }
 
 
