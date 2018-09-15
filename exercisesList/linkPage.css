@@ -1,15 +1,17 @@
-body{
+body {
     font-family: 'montserrat', sans-serif;
-     margin:30%;
-    margin-top:2%;
+    margin: 30%;
+    margin-top: 2%;
     align-content: center;
 }
-div{
+
+div {
     max-width: 20%;
-    padding:0px;
-    margin-right:10%;
+    padding: 0px;
+    margin-right: 10%;
 }
-div.row{
-    float:left;
-    display:inline-block;
+
+div.row {
+    float: left;
+    display: inline-block;
 }
