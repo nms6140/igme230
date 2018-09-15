@@ -1,16 +1,17 @@
+/*sets font to montserrat,margin 30% all around, overrides margin top to be 2%, aligns content*/
 body {
     font-family: 'montserrat', sans-serif;
     margin: 30%;
     margin-top: 2%;
     align-content: center;
 }
-
+/*makes max widths of all divs 20% so they will stay on the same line no matter how big webpage gets, overrides margin right to be 20%*/
 div {
     max-width: 20%;
     padding: 0px;
     margin-right: 10%;
 }
-
+/*floats first div left and displays inline*/
 div.row {
     float: left;
     display: inline-block;
