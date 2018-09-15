@@ -71,7 +71,8 @@ div.projects{
     background-color:cornflowerblue;
     height: 100px;
     opacity:.7;
-    border: 5px solid white;
+    filter:drop-shadow(2px 8px 2px #1B998B);
+
 }
 
 
