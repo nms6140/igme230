@@ -5,9 +5,9 @@ body {
     margin-top: 2%;
     align-content: center;
 }
-/*makes max widths of all divs 20% so they will stay on the same line no matter how big webpage gets, overrides margin right to be 20%*/
+/*makes max widths of all divs 35% so they will stay on the same line no matter how big webpage gets, overrides margin right to be 20%*/
 div {
-    max-width: 20%;
+    max-width: 40%;
     padding: 0px;
     margin-right: 10%;
 }
