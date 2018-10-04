@@ -24,6 +24,7 @@ Flexbox Formatting
     max-width: 95vw;
     display:flex;
     flex-direction: column;
+    min-height: 100vh
 }
 
 main {
@@ -34,6 +35,7 @@ main {
     margin: .5rem 0;
     display:flex;
     flex-direction: row;
+    flex:1;
 }
 
 header, footer {
@@ -51,4 +53,30 @@ article, nav, aside {
     margin: .5rem;
     padding: .5rem;
 }
+
+article{
+    flex:1;
+}
+nav, aside{
+    flex: 0 0 12rem;
+}
+nav{
+    order:-1;
+}
+
+@media screen and (max-width: 36rem){
+    main{
+        flex-direction: column;
+        max-width:100vw;
+    }
+    #wrapper{
+    max-width: none;
+}
+nav, aside, article{
+    order: 0; /* resets order to source default */
+flex: 1; /* allows elements to grow to available space */
+margin: .5rem 0; /* removes l/r margin spacing */
+}
+}
+
 
