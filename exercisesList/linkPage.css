@@ -1,13 +1,13 @@
 /*sets font to montserrat,margin 30% all around, overrides margin top to be 2%, aligns content*/
 body {
     font-family: 'montserrat', sans-serif;
-    margin: 30%;
+    margin: 20%;
     margin-top: 2%;
     align-content: center;
 }
 /*makes max widths of all divs 35% so they will stay on the same line no matter how big webpage gets, overrides margin right to be 20%*/
 div {
-    max-width: 40%;
+    max-width: 50%;
     padding: 0px;
     margin-right: 10%;
 }
