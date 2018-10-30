@@ -41,7 +41,59 @@
 </div>
 
 <script>
-/* Write your code here! */
-</script>
+     <script>
+        //part 1
+        //radio buttons are in an array to store colors
+
+        let radioButtons = document.querySelectorAll("input");
+        let radioRed = radioButtons[0].value;
+        let radioGreen = radioButtons[1].value;
+        let radioBlue = radioButtons[2].value;
+
+
+        //adds tecxt to box
+        //returns stored info in p
+        function selectRadio(color) {
+            let info = document.getElementById("info");
+            info.innerHTML = "You have selected the color " + color;
+        }
+
+
+        //info stored will be displayed when clicked
+        radioButtons[0].onclick = function() {
+            selectRadio(radioRed);
+            selected = radioRed;
+
+        }
+
+        radioButtons[1].onclick = function() {
+            selectRadio(radioGreen);
+            selected = radioGreen;
+
+        }
+
+
+        radioButtons[2].onclick = function() {
+            selectRadio(radioBlue);
+            selected = radioBlue;
+
+        }
+
+
+        //part 2
+        let selected;
+
+        //will display final choice of value of whatever is clicked still
+        let submitButton = document.querySelector("button");
+        submitButton.onclick = function() {
+            let info = document.getElementById("info");
+            info.innerHTML = "Your FINAL CHOICE is " + selected;
+            let title = document.querySelector("legend");
+            title.style.color = selected;
+
+        }
+
+    </script>
 </body>
+
 </html>
