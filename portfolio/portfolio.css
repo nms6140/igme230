@@ -6,13 +6,23 @@ body {
 /*wraps all content in body, sets margins*/
 
 div.wrapper {
-    margin-top: 9%;
+    margin-top: 2%;
 }
+
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
 
-div.nav {
-    float: right;
+.navLinks{
+    float:left;
+     margin-right: 10%;
+    text-decoration: none;
+    margin-bottom: 10%;
+}
+#work a{
+   padding-left: 50%;
+}
+#aboutMe a{
+    margin-right: 0%;
 }
 
 /*div that holds h1, exercises button, and h2 */
@@ -52,16 +62,16 @@ img.top {
 
 /*sets font size, padding, margins, and color of title "projects"*/
 
-
 /*sets ALL divs under class "projects" width, padding, display,margins, background color (placeholder), height,opacity, and colored drop shadow*/
 
 div.projectsGallery {
     display: inline-block;
     margin-left: 2%;
 }
-.projectImages{
-     border: 2px solid #d3d3d3;
-     border-radius: 30px;
+
+.projectImages {
+    border: 2px solid #d3d3d3;
+    border-radius: 30px;
     margin-left: 15%;
     margin-top: 3%;
 }
@@ -73,15 +83,16 @@ div.projectsGallery {
 
 
 }
+
 #eas img {
-    height:35%;
-    width:34%;
-    float:left;
+    height: 35%;
+    width: 34%;
+    float: left;
 
 }
-#reporter img{
-     height:35%;
-    width:34%;
-    margin-left:2%;
-}
 
+#reporter img {
+    height: 35%;
+    width: 34%;
+    margin-left: 2%;
+}
