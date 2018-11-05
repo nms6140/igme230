@@ -59,12 +59,28 @@ div.projectsGallery {
     display: inline-block;
     margin-left: 2%;
 }
+.projectImages{
+     border: 2px solid #d3d3d3;
+     border-radius: 30px;
+    margin-left: 15%;
+    margin-top: 3%;
+}
 
 #mint img {
     height: 70%;
     width: 70%;
     margin-top: 20%;
-    margin-left: 15%;
-    border-radius: 10%;
-    border: 2px solid #d3d3d3;
+
+
+}
+#eas img {
+    height:35%;
+    width:34%;
+    float:left;
+
+}
+#reporter img{
+     height:35%;
+    width:34%;
+    margin-left:2%;
 }
