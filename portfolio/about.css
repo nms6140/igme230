@@ -35,34 +35,32 @@ a.navLinks:hover{
 
 /*div that holds h1, exercises button, and h2 */
 
-#hiText {
-    float: left;
-    margin-left: 2%;
-    margin-top: 3%;
-    font-size: 170%;
 
-}
 
 /*sets margins, padding, and color of h1 (my name)*/
+#aboutText{
+    margin-right:12%;
+    margin-left:50%;
+}
 
-h1 {}
+h1 {
+    color:#f27575;
+}
+
+p{
+    font-size: .9em;
+}
 
 /*sets margins, padding, size, and color of h2 (class name)*/
 
-h2 {
-    margin-top: 0px;
-    margin-bottom: 8%;
-    padding-left: 25%;
-    font-size: 85%;
-    color: #464D6B;
 
-}
 
-img.top {
-    margin-left: 30%;
+img.about{
+    margin-left: 10%;
+    margin-right: 10%;
     float: left;
-    height=22%;
-    width=22%;
+     height: 35%;
+    width: 35%;
 
 }
 
