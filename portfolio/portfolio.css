@@ -41,8 +41,7 @@ h2 {
     color: #464D6B;
 
 }
-/*sets size of font in exercise svg button*/
-#compGraphic img {
+img.top {
     height = 22%;
     width = 22%;
 
