@@ -11,28 +11,35 @@ div.wrapper {
 
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
+a.navLinks:hover{
+    color:aqua;
+}
 
-.navLinks{
+.navLinks {
     float:left;
      margin-right: 10%;
     text-decoration: none;
     margin-bottom: 10%;
-    color: "#d3d3d";
+
 }
-#work a{
+
+#aboutMe a{
    padding-left: 55%;
 }
-#aboutMe a{
+#work a{
     margin-right: 0%;
+}
+#work a:hover{
+
 }
 
 /*div that holds h1, exercises button, and h2 */
 
-#hiText {
+#aboutText {
     float: left;
     margin-left: 2%;
     margin-top: 3%;
-    font-size: 170%;
+
 
 }
 
@@ -42,58 +49,16 @@ h1 {}
 
 /*sets margins, padding, size, and color of h2 (class name)*/
 
-h2 {
-    margin-top: 0px;
-    margin-bottom: 8%;
-    padding-left: 25%;
-    font-size: 85%;
-    color: #464D6B;
 
-}
 
-img.top {
-    margin-left: 30%;
+img.about{
+    margin-left: 5%;
     float: left;
-    height=22%;
-    width=22%;
+    height=10%;
+    width=10%;
 
 }
 
-/*section for divs that make up project gallery, sets padding and margin*/
-
-/*sets font size, padding, margins, and color of title "projects"*/
-
-/*sets ALL divs under class "projects" width, padding, display,margins, background color (placeholder), height,opacity, and colored drop shadow*/
-
-div.projectsGallery {
-    display: inline-block;
-    margin-left: 2%;
-}
-
-.projectImages {
-    border: 2px solid #d3d3d3;
-    border-radius: 30px;
-    margin-left: 15%;
-    margin-top: 3%;
-}
-
-#mint img {
-    height: 70%;
-    width: 70%;
-    margin-top: 20%;
 
 
-}
 
-#eas img {
-    height: 35%;
-    width: 34%;
-    float: left;
-
-}
-
-#reporter img {
-    height: 35%;
-    width: 34%;
-    margin-left: 2%;
-}
