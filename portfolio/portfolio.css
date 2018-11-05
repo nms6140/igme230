@@ -17,9 +17,10 @@ div.wrapper {
      margin-right: 10%;
     text-decoration: none;
     margin-bottom: 10%;
+    color: "#d3d3d";
 }
 #work a{
-   padding-left: 50%;
+   padding-left: 55%;
 }
 #aboutMe a{
     margin-right: 0%;
