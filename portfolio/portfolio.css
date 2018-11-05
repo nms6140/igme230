@@ -12,27 +12,31 @@ div.wrapper {
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
 
-.navLinks{
-    float:left;
-     margin-right: 10%;
+.navLinks {
+    float: left;
+    margin-right: 10%;
     text-decoration: none;
     margin-bottom: 10%;
 
 }
-#aboutMe a{
-   padding-left: 55%;
+
+#aboutMe a {
+    padding-left: 55%;
 }
-#work a{
+
+#work a {
     margin-right: 0%;
 }
 
 /* all dropdown code is from w3Schools.com "How to Create a Hoverable Dropdown" */
+
 .dropbtn {
 
     padding: 0px;
     font-size: 16px;
     border: none;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -43,17 +47,22 @@ div.wrapper {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
+
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /*div that holds h1, exercises button, and h2 */
 
@@ -81,11 +90,11 @@ h2 {
 }
 
 img.top {
-    margin-top:5%;
+    margin-top: 5%;
     margin-left: 30%;
     float: left;
-    height:22%;
-    width:22%;
+    height: 22%;
+    width: 22%;
 
 }
 
@@ -129,13 +138,11 @@ div.projectsGallery {
 }
 
 /* media query syntax found at w3schools.com*/
-@media only screen and (max-width: 768px){
-    img.top{
+
+@media only screen and (max-width: 768px) {
+    img.top {
         height: 50%;
-        width:50%;
-        margin-right:15%;
+        width: 50%;
+        margin-right: 15%;
     }
 }
-
-
-
