@@ -1,0 +1,78 @@
+
+body {
+    font-family: 'montserrat', sans-serif;
+
+}
+/*wraps all content in body, sets margins*/
+div.wrapper {
+    margin-top: 9%;
+}
+/*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
+img.profile {
+    float: right;
+    margin-right: 20%;
+    height: 22%;
+    width: 22%;
+    border-radius: 50%;
+    filter: drop-shadow(2px 10px 1px #1B998B);
+
+}
+/*div that holds h1, exercises button, and h2 */
+div.text {
+    float: left;
+    margin-left: 10%;
+    margin-top: 3%;
+    font-size: 170%;
+
+}
+/*sets margins, padding, and color of h1 (my name)*/
+h1 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 5%;
+    color: #424966;
+}
+/*sets margins, padding, size, and color of h2 (class name)*/
+h2 {
+    margin-top: 0px;
+    margin-bottom: 8%;
+    padding-left: 25%;
+    font-size: 85%;
+    color: #464D6B;
+
+}
+/*sets size of font in exercise svg button*/
+#compGraphic img {
+    height = 22%;
+    width = 22%;
+
+}
+/*section for divs that make up project gallery, sets padding and margin*/
+section.gallery {
+    padding-top: 26%;
+    margin-left: 14%;
+}
+/*sets font size, padding, margins, and color of title "projects"*/
+p {
+    font-size: 180%;
+    padding: 0px;
+    margin: 2%;
+    margin-bottom: 1%;
+    margin-left: 0px;
+    color: #464D6B;
+}
+/*sets ALL divs under class "projects" width, padding, display,margins, background color (placeholder), height,opacity, and colored drop shadow*/
+div.projects {
+    max-width: 20%;
+    padding-right: 15%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: inline-block;
+    margin-left: 2%;
+    background-color: cornflowerblue;
+    height: 100px;
+    opacity: .7;
+    filter: drop-shadow(2px 8px 1px #1B998B);
+
+}
