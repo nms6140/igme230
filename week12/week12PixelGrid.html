@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+
     </script>
 
     <style>
@@ -81,6 +83,7 @@
 
 
         }
+
     </style>
 </head>
 
@@ -124,23 +127,29 @@
         pixelGrid.style.gridTemplateColumns = "repeat(" + numCols + "," + cellSize + "px)";
         pixelGrid.style.gridTemplateRows = "repeat(" + numRows + "", "" + cellSize + "px)";
 
-      	let color = $("#colorChooser").val();
-		$("#colorChooser").change(function() {
-			color = $(this).val();
-			console.log(color);
-		});
+        let color = $("#colorChooser").val();
+        $("#colorChooser").change(function() {
+            color = $(this).val();
+            console.log(color);
+        });
 
-		$(".cell").mousedown(function() {
-			event.preventDefault();
-			$(this).css("background-color", color);
-			$(".cell").mouseover(function() {
-				$(this).css("background-color", color);
-			});
-		});
+        $(".cell").mousedown(function() {
+            event.preventDefault();
+            $(this).css("background-color", color);
+            $(".cell").mouseover(function() {
+                $(this).css("background-color", color);
+            });
+        });
 
-		$(document).mouseup(function() {
-			$(".cell").unbind("mouseover");
-		});
+        $(document).mouseup(function() {
+            $(".cell").unbind("mouseover");
+        });
+        $("#reset").click(function() {
+            for (i = 0; i < numCells; i++) {
+                $(".cell").css("background-color", "silver");
+            }
+        });
+
     </script>
 </body>
 
