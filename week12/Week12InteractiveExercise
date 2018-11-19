@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .mygrid{
+            /* makes the div a grid */
+            display: grid; 
+            
+            /* creates the frames and height for the site for the rows to fill in */
+            height: 100vh;
+
+            /* create the columns // 3 columns 150px each // fr = fractions will divide the left over space equally */
+            grid-template-columns: 150px 1fr 1fr;
+            
+            /* create the rows // 100px on top, 1fr to autofill the remaining space in the middle,  */
+            grid-template-rows: 100px 1fr
+        }
+
+        .mygrid div{
+            /* centers everything into the center */
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            /* just so you can visably see the grids */
+            background-color: pink;
+            border: 1px dotted green;
+
+        }
+
+        .titlebar{
+            /* placing the title bar first column and span all the way across */
+            grid-column-start: 1;
+            grid-column-end: span 3;
+
+            /* does the same thing // first value is start then dash to go to the last value which is spanning to what cell */
+            /* grid-column: 1 / span 3; */
+        }
+
+        .sidebar{
+            grid-row: 2 / -2
+        }
+
+        .footer{
+            /* same columns span as the titlebar! */
+            grid-column: 1 / span 3;
+
+        }
+    
+    
+    
+    </style>
+</head>
+
+<body>
+    <div class ="mygrid">
+        <!-- any child inside the div is going to be a cell in the grid  -->
+          <div>Cell 1</div>  
+          <div>Cell 2</div> 
+          <div>Cell 3</div>  
+          <div>Cell 4</div>  
+          <div>Cell 5</div>  
+          <div>Cell 6</div>  
+          <div>Cell 7</div>  
+        
+
+
+    </div>
+</body>
+</html>
