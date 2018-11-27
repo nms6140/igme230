@@ -90,6 +90,10 @@
             };
             verseRequest.send(); // actually sends the request
         };
+        verseChoose.onchange = function() {
+            verse = verseChoose.value;
+            updateVerse(verse);
+        };
 
     </script>
 </body>
