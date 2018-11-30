@@ -6,31 +6,51 @@
     <title>Reporter design</title>
     <link rel="stylesheet" href="reporter.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+        .grid{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 30% auto auto;
+            grid-template-rows: 10% 15% auto auto;
+        }
+        .grid div{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            border: 1px dotted green;
+        }
+
+        .nav{
+            grid-column: 1 /span 3;
+        }
+        .photo{
+            grid-column: 1 / span 2;
+            grid-row: 2/ span 2
+        }
+        .title{
+            grid-row: 2/ span -2;
+        }
+        .overview{
+            grid-column: 1/ span 3;
+        }
+        .learned{
+            grid-column: span 2;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="nav">
-            <div id="aboutMe"> <a href="aboutPage.html" class="navLinks">About Me</a></div>
-
-            <div id="resume"> <a href="https://nicolesimone.myportfolio.com/resume" class="navLinks">Resume</a>
-            </div>
-            <div id="work">
-                <a href="index.html" class="navLinks">Work</a>
-            </div>
-
-        </div>
-        <div class="content">
-            <div id="reporter">
-                <img src="assets/reporter.png" class="about" alt="pic of reporter design">
-            </div>
-            <div id="aboutText">
-                <h1>Reporter Design</h1>
-                <p>In this particular project the point was to design a new website for the RIT Reporter student magazine. We were told to be bold and think outside of what is expected, so I chose the bold looks of geometric shape and limited color of the fashion world. I focused on interesting ways to use the website as both a visual and informative tool that also still gave way for easy of navigation and user experience. <br>I learned skills of using a whole "type" or "world" as a reference. I researched into why fashion websites do what they do and what the point of specific colors are. I completely immersed myself in the style and then adapted it to become more tame and geometric for the Reporter.</p>
-
-            </div>
-        </div>
-
+    <div class = "grid">
+        <div class = "nav">nav</div>
+        <div class = "photo">photo</div>
+        <div class = "title">title</div>
+        <div class = "date/info">date/info</div>
+        <div class = "overview">overview</div>
+        <div class = "photo3">photo3</div>
+        <div class = "learned">what I Learned</div>
+        <div class = "otherProjects">view other projects 1</div>
+        <div class = "otherProjects">view other projects 2</div>
+        <div class = "otherProjects">view other projects 3</div>
     </div>
 </body>
 

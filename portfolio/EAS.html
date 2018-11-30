@@ -6,32 +6,53 @@
     <title>EAS design</title>
     <link rel="stylesheet" href="EAS.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+     .grid{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 30% auto auto;
+            grid-template-rows: 10% 15% auto auto;
+        }
+        .grid div{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            border: 1px dotted green;
+        }
+
+        .nav{
+            grid-column: 1 /span 3;
+        }
+        .photo{
+            grid-column: 1 / span 2;
+            grid-row: 2/ span 2
+        }
+        .title{
+            grid-row: 2/ span -2;
+        }
+        .overview{
+            grid-column: 1/ span 3;
+        }
+        .learned{
+            grid-column: span 2;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="nav">
-            <div id="aboutMe"> <a href="aboutPage.html" class="navLinks">About Me</a></div>
-
-            <div id="resume"> <a href="https://nicolesimone.myportfolio.com/resume" class="navLinks">Resume</a>
-            </div>
-            <div id="work">
-                <a href="index.html" class="navLinks">Work</a>
-            </div>
-
-        </div>
-        <div class="content">
-            <div id="EAS">
-                <img src="assets/EAS.png" class="about" alt="pic of emergency alert system redesign">
-            </div>
-            <div id="aboutText">
-                <h1>EAS Design</h1>
-                <p>In this particular project the point was to design an Emergency Alert System that was easy to navigate and hard to send accidental alerts. My design was focused around a computer dashboard with simple tabs for everything. Each type of action had a confirmation process as well that had different lengths depending on the influences the alerts could have. <br>I learned how to design with my user in mind and not just myself. Although the design is fairly attentaive to style and color, it is simple and easy to navigate.</p>
-
-            </div>
-        </div>
-
+     <div class = "grid">
+        <div class = "nav">nav</div>
+        <div class = "photo">photo</div>
+        <div class = "title">title</div>
+        <div class = "date/info">date/info</div>
+        <div class = "overview">overview</div>
+        <div class = "photo3">photo3</div>
+        <div class = "learned">what I Learned</div>
+        <div class = "otherProjects">view other projects 1</div>
+        <div class = "otherProjects">view other projects 2</div>
+        <div class = "otherProjects">view other projects 3</div>
     </div>
+
 </body>
 
 </html>
