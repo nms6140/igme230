@@ -6,32 +6,30 @@
     <title>About Me</title>
     <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>  .grid{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 150px fr;
+            grid-template-rows: 10% 35%;
+        }
+        .grid div{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            border: 1px dotted green;
+        }
+        .nav{
+            grid-column: 1 /span 2;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="nav">
-           <div id="aboutMe"> <a href="aboutPage.html" class="navLinks">About Me</a></div>
-
-            <div id="resume"> <a href="index.html" class="navLinks">Resume</a>
-            </div>
-             <div id="work">
-                <a href="index.html" class="navLinks">Work</a>
-            </div>
-
-        </div>
-        <div class="content">
-            <div id="aboutPic">
-                <img src="assets/aboutPic.png" class="about" alt="pic of me">
-            </div>
-            <div id="aboutText">
-                <h1>About Me.</h1>
-                <p ><span class = "hilighted">Hello! </span>I'm Nicole Simone. I'm a New Media Design student at Rochester Institute of Technology. I'm passionate about vector graphics and smooth motion as well as user research and experience.</p><p><span class = "hilighted">I love </span> comics, food, and plants and my favorite season is fall becuase I own pretty much only sweaters.</p>
-
-                 <a href="https://www.instagram.com/nsilvertongue/" class="social">Instagram</a>
-                 <a href="mailto:nms6140@g.rit.edu" class="social">Email</a>
-            </div>
-        </div>
+     <div class = "grid">
+        <div class = "nav">nav</div>
+        <div class = "graphic">graphic</div>
+        <div class = "hiText">hiText</div>
 
     </div>
 </body>

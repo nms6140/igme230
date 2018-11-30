@@ -6,47 +6,38 @@
     <title>Portfolio Site</title>
     <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+        .grid{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 150px fr;
+            grid-template-rows: 10% 35% auto;
+        }
+        .grid div{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            border: 1px dotted green;
+        }
+        .nav{
+            grid-column: 1 /span 2;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="nav">
-            <div id="aboutMe"> <a href="aboutPage.html" class="navLinks">About Me</a></div>
-
-
-            <div id="resume"> <a href="https://nicolesimone.myportfolio.com/resume" class="navLinks">Resume</a>
-            </div>
-            <div class="dropdown">
-                <div id="work" class="navLinks">
-
-                    <button class="dropbtn">Work</button>
-                    <div class="dropdown-content">
-                        <a href="mint.html">Mint Redesign</a>
-                        <a href="EAS.html">EAS Design</a>
-                        <a href="reporter.html">Reporter Design</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="main">
-            <div id="compGraphic">
-                <img src="assets/computer.png" class="top" alt="illustrator graphic">
-            </div>
-            <div id="hiText">
-                <h2> Hi, I'm</h2>
-                <h1>Nicole</h1>
-            </div>
-        </div>
-        <div class="projectsGallery">
-            <div id="mint"><a href="mint.html"><img src ="assets/mint.png" class = "project Images" alt ="mint project"></a></div>
-            <div id="eas"><a href="EAS.html"><img src ="assets/EAS.png" class = "projectImages" alt = "project Images"></a>
-            </div>
-            <div id="reporter"><a href="reporter.html" alt="project Images"><img src ="assets/reporter.png" class = "projectImages" alt ="reporter project"></a></div>
-        </div>
+    <div class = "grid">
+        <div class = "nav">nav</div>
+        <div class = "graphic">graphic</div>
+        <div class = "hiText">hiText</div>
+        <div class = "project1">project1</div>
+        <div class = "project2">project2</div>
+        <div class = "project3">project3</div>
+        <div class = "project4">project4</div>
+        <div class = "project5">project5</div>
+        <div class = "project6">project6</div>
     </div>
-    <a href="https://paper.dropbox.com/doc/Documentation-Page--ARG36Ilg_TQAH5pnIP3rtaz5AQ-zFFbREOUryiCSG7thT4b5"> Documentation</a>
+
 </body>
 
 </html>
