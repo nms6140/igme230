@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EAS design</title>
+    <link rel="stylesheet" href="EAS.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+     .grid{
+            display: grid;
+            height: 100vh;
+            grid-template-columns:  ;
+            grid-template-rows: 10% auto;
+     max-width: 1200px;
+        }
+        .grid div{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            border: 1px dotted green;
+
+        }
+
+        .nav{
+            grid-column: 1 /span 4;
+        }
+        .nameMajor{
+            grid-column: 1 / span 2;
+
+        }
+        .contacts{
+            grid-column: 3 / span 2;
+
+        }
+        .education{
+            grid-column: 1/ span 2;
+        }
+        .skills{
+            grid-column: 3 /span 2;
+        }
+        .work1{
+            grid-column: 1/ span 2;
+        }
+        .work2{
+            grid-column: 3 /span 2;
+        }
+        .work3{
+            grid-column: 1/ span 2;
+        }
+        .work4{
+            grid-column: 3 /span 2;
+        }
+    </style>
+</head>
+
+<body>
+     <div class = "grid">
+        <div class = "nav">nav</div>
+        <div class = "nameMajor">name/major</div>
+        <div class = "contacts">contacts</div>
+
+
+        <div class = "education">education</div>
+         <div class = "skills">skills</div>
+        <div class = "work1">work1</div>
+        <div class = "work2">work2</div>
+        <div class = "work3">work3</div>
+        <div class = "work4">work4</div>
+    </div>
+
+</body>
+
+</html>
