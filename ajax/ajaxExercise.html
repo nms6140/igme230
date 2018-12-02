@@ -88,7 +88,7 @@
         let verseString = (poem + " #" + verse);
         function updateVerse(verse) {
             let verseRequest = new XMLHttpRequest(); // defines a specific request
-            verseRequest.open('GET', verse); // specifies what to do when request is sent
+            verseRequest.open('GET', verseString); // specifies what to do when request is sent
             verseRequest.responseType = 'text'; // specifies that the files should be treated as text
             verseRequest.onload = function() { // specifies what to do when file is loaded
                 poemDisplay.innerHTML = verseRequest.response; // place the response text in the selected element
