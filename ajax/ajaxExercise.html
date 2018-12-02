@@ -85,7 +85,7 @@
         let verseChoose = document.querySelector('select'); // the select menu
         let poemDisplay = document.querySelector('#selectedverse'); // the space for the verse to display
         let verse = "verse1"; // the chosen verse; initialize with first menu option
-        let verseString = (poem + " #" + verse);
+        let verseString = `${poem} # ${verse}`;
         function updateVerse(verse) {
             let verseRequest = new XMLHttpRequest(); // defines a specific request
             verseRequest.open('GET', verseString); // specifies what to do when request is sent
