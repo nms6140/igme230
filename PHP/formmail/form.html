@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <form method = "post" action ="formmail.php" name = "ContactForm">
+    <form method ="post" action ="formmail.php" name ="ContactForm">
     <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
-    <input type="hidden" name="recipients" value="nms6140@gmail.com" />
+    <input type="hidden" name="recipients" value="nms6140@rit.edu" />
     <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
     <input type="hidden" name="subject" value="Test Mail from Contact Form" />
     <input type="hidden" name="good_url" value="success.html" />
-        <h1>Your Name's Contact Form</h1>
+        <h1>Nicole Simone's Contact Form</h1>
 
         <fieldset>
             <legend>Your Contact Information</legend>
@@ -29,14 +29,14 @@
 
             <div class="inputs">
                 <label for="useremail">Your RIT Email:</label>
-                <input type="email" name="EmailAddr" pattern=".+rit.edu" size="30">
+                <input type="email" name ="EmailAddr" pattern = ".+rit.edu" size = "30">
             </div>
 
         </fieldset>
 
         <div id="commentsection">
             <label for="comments">Comments:</label>
-        <textarea name="mesg">Put your comments here...</textarea>
+        <textarea name="mesg"></textarea>
         </div>
 
         <label for="response">Would You Like a Response?</label>
