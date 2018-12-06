@@ -15,3 +15,8 @@ $(h2).load(text);
         text = $(this).val();
         $(h2).load(text);
     });
+let clicks = 0;
+$("#click").click(function(){
+    clicks ++;
+    $("#clickcount").html(clicks);
+})
