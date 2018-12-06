@@ -1,3 +1,4 @@
+'use strict';
 $(function(){
     $(".submenu").hide()
 
@@ -13,5 +14,10 @@ $(".menuitem").click(function(){
 
 
 let content = "content1.txt";
+$("#choose-content").val(content);
 $("#content").load(content);
 
+$("#choose-content").change(function(){
+    content = $(this).val();
+    $("#content").load(content);
+})
