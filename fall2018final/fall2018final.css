@@ -1,0 +1,89 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+
+/**************
+Your Formatting
+***************/
+#mygrid {
+    width: 90vw;
+    height: 100vh;
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: 75px 30px 1fr 2fr 50px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "a a""b b""c d""e d""f f";
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: b;
+    background-color:lightpink;
+}
+
+article {
+    grid-area: d;
+    background-color:lightcyan;
+}
+
+aside {
+    grid-area: c;
+    background-color:lightblue;
+}
+#extracredit{
+    grid-area: e;
+    background-color:lightblue;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:lightpink;
+
+}
