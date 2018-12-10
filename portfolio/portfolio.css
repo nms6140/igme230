@@ -11,85 +11,138 @@ div.wrapper {
 
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
+.grid {
+    display: grid;
+    min-height: 100vh;
+    max-width: 1200px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 20% 25% 30% 30%;
+    grid-template-areas: "a a""b c""b d""e f""g h""i j";
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.nav{
-    padding-right: 5%
+.grid div {
+    display: flex;
+    border: 1px dotted green;
+}
+
+.nav {
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: a;
+    padding-right: 5%;
+    display: flex;
 }
 
 .navLinks {
-  margin-left: 10%;
+    margin-left: 10%;
     text-decoration: none;
     color: darkgray;
 }
-/* all dropdown code is from w3Schools.com "How to Create a Hoverable Dropdown" */
 
-.dropbtn {
-
-    padding: 0px;
-    font-size: 16px;
-    border: none;
+.navLinks:hover {
+    color: #ff8080;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.graphic {
+    grid-area: b;
+    align-items: baseline;
+    align-items: center;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+video {
+    max-width: 100%;
+    border-radius: 25px
+
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Show the dropdown menu on hover */
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/*div that holds h1, exercises button, and h2 */
-
-#hiText {
-    float: left;
-    margin-left: 2%;
-    margin-top: 6%;
-    font-size: 170%;
-
+.hiText {
+    grid-area: c;
+    padding-left: 10%;
+    align-items: flex-end;
 }
 
 /*sets margins, padding, and color of h1 (my name)*/
 
-h1 {}
+.actualText {
+    font-size: 150%;
+    align-items: flex-start;
+}
+
+h1 {
+    margin-top: 0;
+    color: #ff8080;
+}
 
 /*sets margins, padding, size, and color of h2 (class name)*/
 
 h2 {
-    margin-top: 0px;
-    margin-bottom: 8%;
-    padding-left: 25%;
-    font-size: 85%;
+    max-height: 50px;
+    min-width: 100%;
     color: #464D6B;
 
 }
 
-img.top {
-    margin-top: 5%;
-    margin-left: 30%;
-    float: left;
-    height: 22%;
-    width: 22%;
+.actualText {
+    grid-area: d;
+    padding-left: 10%;
+    margin-top: 0;
+    color: #ff8080;
+    margin-bottom: 0;
+}
+
+.project1{
+     grid-area: e;
+    align-items: center;
+    justify-content: center;
+    padding-right:5%;
+}
+ img{
+    max-width:100%;
+
+    border: 2px solid #464D6B;
+    border-radius: 25px;
+}
+.project1 img{
+    padding: 10% 0;
 
 }
+
+.project2 {
+    grid-area: f;
+    align-items: center;
+    justify-content: center;
+   padding-left:5%;
+}
+.project2 img{
+    max-width: 80%;
+
+}
+
+.project3 {
+    grid-area: g;
+}
+
+.project4 {
+    grid-area: h;
+}
+
+.project5 {
+    grid-area: i;
+}
+
+.project6 {
+    grid-area: j;
+}
+
+
+
+
+/*div that holds h1 and h2 */
+
+
+
 
 /*section for divs that make up project gallery, sets padding and margin*/
 
@@ -133,10 +186,22 @@ div.projectsGallery {
 
 /* media query syntax found at w3schools.com*/
 
-@media only screen and (max-width: 768px) {
-    img.top {
-        height: 50%;
-        width: 50%;
-        margin-right: 15%;
+@media screen and (max-width: 640px) {
+    .grid {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "a""c""d""b""e""f""g""h""i""j";
     }
+
+    .hiText {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .actualText {
+        justify-content: center;
+    }
+
 }

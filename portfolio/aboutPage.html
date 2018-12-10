@@ -51,10 +51,33 @@
             <a class="navLinks" href="aboutPage.html"> about</a>
             <a class="navLinks" href="index.html"> work </a>
         </div>
-        <div class="graphic">graphic</div>
+        <div class="graphic">
+        </div>
         <div class="hiText">hiText</div>
         <div class="media">media</div>
     </div>
+    <script>
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}
+
+function makeBig() {
+    myVideo.width = 560;
+}
+
+function makeSmall() {
+    myVideo.width = 320;
+}
+
+function makeNormal() {
+    myVideo.width = 420;
+}
+</script>
 </body>
 
 </html>

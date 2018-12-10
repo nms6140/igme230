@@ -47,8 +47,13 @@ p{
 }
 
 /*sets margins, padding, size, and color of h2 (class name)*/
-
-
+ .interactive iframe {
+    max-width: 500px;
+    height: 100%;
+}
+.interactive{
+    display:flex;
+}
 
 #EAS img{
     margin-left: 10%;

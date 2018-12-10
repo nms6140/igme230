@@ -5,69 +5,53 @@
     <meta charset="UTF-8">
     <title>Project 3: Revised Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <style>
-        .grid{
-            display: grid;
-            min-height: 100vh;
-            max-width: 1200px;
-            grid-template-columns: 150px fr;
-            grid-template-rows:  10% 45% 30% 30% 30%;
-            grid-template-areas: "a a" "b c" "d e" "f g" "h i";
-             margin-left: auto;
-            margin-right: auto;
-        }
-        .grid div{
-            display:flex;
-            border: 1px dotted green;
-        }
-        .nav{
-              align-items: center;
-            justify-content: flex-end;
-            grid-area: a;
-        }
-        .graphic{
-            grid-area: b;
-        }
-        .hiText{
-            grid-area: c;
-        }
-        .project1{
-            grid-area: d;
-        }
-        .project2{
-            grid-area: e;
-        }
-        .project3{
-            grid-area: f;
-        }
-        .project4{
-            grid-area: g;
-        }
-        .project5{
-            grid-area: h;
-        }
-        .project6{
-            grid-area: i;
-        }
+
     </style>
 </head>
 
 <body>
-    <div class = "grid">
-        <div class = "nav">
+    <div class="grid">
+        <div class="nav">
+            <h1>Nicole</h1>
             <a class="navLinks" href="resume.html"> Resume</a>
             <a class="navLinks" href="aboutPage.html"> about</a>
-            <a class="navLinks" href="index.html"> work </a>
+            <a class="navLinks" href="index.html"> <p class = "top">work</p>
+            <ul class="projects">
+                    <li>Sub Item a</li>
+                    <li>Sub Item b</li>
+                     <li>Sub Item c</li>
+                    <li>Sub Item d</li>
+                </ul>
+                </a>
         </div>
-        <div class = "graphic">graphic</div>
-        <div class = "hiText">hiText</div>
-        <div class = "project1">project1</div>
-        <div class = "project2">project2</div>
-        <div class = "project3">project3</div>
-        <div class = "project4">project4</div>
-          <div class = "project5">project5</div>
-        <div class = "project6">project6</div>
+        <!--video embeding and autoplay features from portfolio.miguelcardona.com-->
+        <div class="graphic"><video preload="none" playsinline="" autoplay="" muted="" controls="" loop="" src="assets/graphicVideo.mp4">
+                <source src="assets/graphicVideo.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="hiText">
+            <div class="tagLine">
+                <h2> Hi, I'm</h2>
+
+
+            </div>
+
+        </div>
+        <div class="actualText">
+            <h1>Nicole</h1>
+
+        </div>
+
+        <div class="project1"><a href="mint.html"> <img src="assets/mint.png"></a></div>
+        <div class="project2"><a href = "reporter.html"> <img src = "assets/reporter.png"></a></div>
+        <div class="project3">project3</div>
+        <div class="project4">project4</div>
 
     </div>
 
