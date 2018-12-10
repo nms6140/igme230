@@ -4,69 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <title>resume</title>
-    <link rel="stylesheet" href="EAS.css">
+    <link rel="stylesheet" href="resume.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <style>
-     .grid{
+        .grid {
             display: grid;
-            height: 100vh;
-            grid-template-columns:  ;
-            grid-template-rows: 10% auto;
-     max-width: 1200px;
+            min-height: 100vh;
+            width: 100vw;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+            max-width: 1200px;
+            grid-template-areas: "a a" "b c" "d e" "f g" "h i";
+            margin-left: auto;
+            margin-right: auto;
         }
-        .grid div{
-            display:flex;
-            justify-content: center;
-            align-content: center;
+
+        .grid div {
+            display: flex;
             border: 1px dotted green;
 
         }
 
-        .nav{
-            grid-column: 1 /span 4;
+        .nav {
+            align-items: center;
+            justify-content: flex-end;
+            grid-area: a;
         }
-        .nameMajor{
-            grid-column: 1 / span 2;
+
+        .nameMajor {
+            grid-area: b;
+        }
+
+        .contacts {
+            grid-area: c;
 
         }
-        .contacts{
-            grid-column: 3 / span 2;
 
+        .education {
+            grid-area: d;
         }
-        .education{
-            grid-column: 1/ span 2;
+
+        .skills {
+            grid-area: e;
         }
-        .skills{
-            grid-column: 3 /span 2;
+
+        .work1 {
+            grid-area: f;
         }
-        .work1{
-            grid-column: 1/ span 2;
+
+        .work2 {
+            grid-area: g;
         }
-        .work2{
-            grid-column: 3 /span 2;
+
+        .work3 {
+            grid-area: h;
         }
-        .work3{
-            grid-column: 1/ span 2;
+
+        .work4 {
+            grid-area: i;
         }
-        .work4{
-            grid-column: 3 /span 2;
-        }
+
     </style>
 </head>
 
 <body>
-     <div class = "grid">
-        <div class = "nav">nav</div>
-        <div class = "nameMajor">name/major</div>
-        <div class = "contacts">contacts</div>
+    <div class="grid">
+        <div class="nav">
+             <a class="navLinks" href="resume.html"> Resume</a>
+            <a class="navLinks" href="aboutPage.html"> about</a>
+            <a class="navLinks" href="index.html"> work </a>
+        </div>
+        <div class="nameMajor">name/major</div>
+        <div class="contacts">contacts</div>
 
 
-        <div class = "education">education</div>
-         <div class = "skills">skills</div>
-        <div class = "work1">work1</div>
-        <div class = "work2">work2</div>
-        <div class = "work3">work3</div>
-        <div class = "work4">work4</div>
+        <div class="education">education</div>
+        <div class="skills">skills</div>
+        <div class="work1">work1</div>
+        <div class="work2">work2</div>
+        <div class="work3">work3</div>
+        <div class="work4">work4</div>
     </div>
 
 </body>

@@ -11,27 +11,17 @@ div.wrapper {
 
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
-a.navLinks:hover{
-    color:aqua;
+.nav{
+    padding-right: 5%
 }
 
 .navLinks {
-    float:left;
-     margin-right: 10%;
+  margin-left: 10%;
     text-decoration: none;
-    margin-bottom: 10%;
-
+    color: darkgray;
 }
 
-#aboutMe a{
-   padding-left: 55%;
-}
-#work a{
-    margin-right: 0%;
-}
-#work a:hover{
 
-}
 
 /*div that holds h1, exercises button, and h2 */
 
@@ -60,11 +50,11 @@ p{
 
 
 
-#mint img{
+#EAS img{
     margin-left: 10%;
     margin-right: 10%;
-     height: 90%;
-    width: 90%;
+     height: 80%;
+    width: 80%;
 
 }
 

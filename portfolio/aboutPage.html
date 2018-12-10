@@ -6,31 +6,54 @@
     <title>About Me</title>
     <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <style>  .grid{
+    <style>
+        .grid {
             display: grid;
             height: 100vh;
+            max-width: 1200px;
             grid-template-columns: 150px fr;
-            grid-template-rows: 10% 35%;
+            grid-template-rows: 10% 35% 10%;
+            grid-template-areas: "a a" "b c" "b d";
+            margin-left: auto;
+            margin-right: auto;
         }
-        .grid div{
-            display:flex;
-            justify-content: center;
-            align-content: center;
+
+        .grid div {
+            display: flex;
             border: 1px dotted green;
         }
-        .nav{
-            grid-column: 1 /span 2;
+
+        .nav {
+            align-items: center;
+            justify-content: flex-end;
+            grid-area: a;
+        }
+
+        .graphic {
+            grid-area: b;
+        }
+
+        .hiText {
+            grid-area: c;
+
+        }
+        .media{
+            grid-area: d;
         }
 
     </style>
 </head>
 
 <body>
-     <div class = "grid">
-        <div class = "nav">nav</div>
-        <div class = "graphic">graphic</div>
-        <div class = "hiText">hiText</div>
-
+    <div class="grid">
+        <div class="nav">
+            <a class="navLinks" href="resume.html"> Resume</a>
+            <a class="navLinks" href="aboutPage.html"> about</a>
+            <a class="navLinks" href="index.html"> work </a>
+        </div>
+        <div class="graphic">graphic</div>
+        <div class="hiText">hiText</div>
+        <div class="media">media</div>
     </div>
 </body>
 

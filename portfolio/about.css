@@ -14,24 +14,17 @@ div.wrapper {
 a.navLinks:hover{
     color:aqua;
 }
+.nav{
+    padding-right: 5%
+}
 
 .navLinks {
-    float:left;
-     margin-right: 10%;
+  margin-left: 10%;
     text-decoration: none;
-    margin-bottom: 10%;
-
+    color: darkgray;
 }
 
-#aboutMe a{
-   padding-left: 55%;
-}
-#work a{
-    margin-right: 0%;
-}
-#work a:hover{
 
-}
 
 /*div that holds h1, exercises button, and h2 */
 

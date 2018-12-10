@@ -4,53 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <title>EAS design</title>
-    <link rel="stylesheet" href="EAS.css">
+    <link rel="stylesheet" href="projects.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <style>
-     .grid{
+       .grid {
             display: grid;
-            height: 100vh;
+            min-height: 100vh;
+            max-width: 1200px;
             grid-template-columns: 30% auto auto;
-            grid-template-rows: 10% 15% auto auto;
+            grid-template-rows: 10% 25% 15% 25% 25% 25%;
+            grid-template-areas: "a a a" "b b c" "b b d" "e f g" "h h i" "j k l";
+            margin-left: auto;
+            margin-right: auto;
         }
-        .grid div{
-            display:flex;
-            justify-content: center;
-            align-content: center;
+
+        .grid div {
+            display: flex;
             border: 1px dotted green;
         }
 
-        .nav{
-            grid-column: 1 /span 3;
+        .nav {
+
+            grid-area: a;
+            align-items: center;
+            justify-content: flex-end;
         }
-        .photo{
-            grid-column: 1 / span 2;
-            grid-row: 2/ span 2
+
+        .photo {
+
+            grid-area: b;
         }
-        .title{
-            grid-row: 2/ span -2;
+
+        .title {
+
+            grid-area: c;
         }
-        .overview{
-            grid-column: 1/ span 3;
+
+        .date/info {
+            grid-area: d;
         }
-        .learned{
-            grid-column: span 2;
+
+        .overview {
+
+            grid-area: e;
         }
+        .photo2{
+            grid-area: f;
+        }
+        .photo3{
+            grid-area: g;
+        }
+
+        .learned {
+
+            grid-area: h;
+        }
+
+
+        .photo4{
+            grid-area: i;
+        }
+        .otherProjects1 {
+            grid-area: j;
+        }
+
+        .otherProjects2 {
+            grid-area: k;
+        }
+
+        .otherProjects3 {
+           grid-area: l;
+        }
+
     </style>
 </head>
 
 <body>
-     <div class = "grid">
-        <div class = "nav">nav</div>
-        <div class = "photo">photo</div>
-        <div class = "title">title</div>
-        <div class = "date/info">date/info</div>
-        <div class = "overview">overview</div>
-        <div class = "photo3">photo3</div>
-        <div class = "learned">what I Learned</div>
-        <div class = "otherProjects">view other projects 1</div>
-        <div class = "otherProjects">view other projects 2</div>
-        <div class = "otherProjects">view other projects 3</div>
+    <div class="grid">
+        <div class="nav">
+            <a class="navLinks" href="resume.html"> Resume</a>
+            <a class="navLinks" href="aboutPage.html"> about</a>
+            <a class="navLinks" href="index.html"> work </a>
+        </div>
+        <div class="photo">photo</div>
+        <div class="title">title</div>
+        <div class="date/info">date/info</div>
+        <div class="overview">overview</div>
+        <div class="learned">what I Learned</div>
+        <div class="photo2">photo2</div>
+        <div class="photo3">photo3</div>
+        <div class="photo4">photo4</div>
+         <div class="otherProjects1">view other projects 1</div>
+        <div class="otherProjects2">view other projects 2</div>
+        <div class="otherProjects3">view other projects 3</div>
     </div>
 
 </body>

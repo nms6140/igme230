@@ -12,22 +12,15 @@ div.wrapper {
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
 
+.nav{
+    padding-right: 5%
+}
+
 .navLinks {
-    float: left;
-    margin-right: 10%;
+  margin-left: 10%;
     text-decoration: none;
-    margin-bottom: 10%;
-
+    color: darkgray;
 }
-
-#aboutMe a {
-    padding-left: 55%;
-}
-
-#work a {
-    margin-right: 0%;
-}
-
 /* all dropdown code is from w3Schools.com "How to Create a Hoverable Dropdown" */
 
 .dropbtn {
