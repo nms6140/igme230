@@ -1,8 +1,10 @@
 "use strict";
+
 $(function(){
-    $(".projects").hide()
+    $(".submenu").hide()
+
 });
 
-$(".top").click(function(){
-    $(this).next("").slideToggle("slow");
-})
+$(".menuitem").click(function(){
+    $( this ).next(".submenu").slideToggle("slow")
+});
