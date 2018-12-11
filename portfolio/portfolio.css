@@ -16,7 +16,7 @@ div.wrapper {
     min-height: 100vh;
     max-width: 1200px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 20% 25% 30% 30%;
+    grid-template-rows: 10% 20% 25% 1fr 1fr;
     grid-template-areas: "a a""b c""b d""e f""g h""i j";
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +24,6 @@ div.wrapper {
 
 .grid div {
     display: flex;
-    border: 1px dotted green;
 }
 
 .nav {
@@ -51,9 +50,9 @@ div.wrapper {
     align-items: center;
 }
 
-video {
+ video {
     max-width: 100%;
-    border-radius: 25px
+    border-radius: 10px
 
 }
 
@@ -68,6 +67,11 @@ video {
 .actualText {
     font-size: 150%;
     align-items: flex-start;
+      grid-area: d;
+    padding-left: 10%;
+    margin-top: 0;
+    color: #ff8080;
+    margin-bottom: 0;
 }
 
 h1 {
@@ -84,48 +88,45 @@ h2 {
 
 }
 
-.actualText {
-    grid-area: d;
-    padding-left: 10%;
-    margin-top: 0;
-    color: #ff8080;
-    margin-bottom: 0;
-}
+
 
 .project1{
      grid-area: e;
+    padding: 0 10%;
+    display: flex;
+   justify-content:flex-end;
     align-items: center;
-    justify-content: center;
-    padding-right:5%;
 }
- img{
-    max-width:100%;
+ img {
+    max-width:80%;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
 
-    border: 2px solid #464D6B;
-    border-radius: 25px;
-}
-.project1 img{
-    padding: 10% 0;
 
-}
 
 .project2 {
     grid-area: f;
-    align-items: center;
-    justify-content: center;
-   padding-left:5%;
+      padding: 0 10%;
+    display: flex;
 }
-.project2 img{
-    max-width: 80%;
 
-}
 
 .project3 {
     grid-area: g;
+    padding: 0 10%;
+    display: flex;
+   justify-content:flex-end;
+    align-items: center;
 }
 
 .project4 {
     grid-area: h;
+    padding:10%
+}
+
+.project4 video{
+    max-width: 80%;
 }
 
 .project5 {
@@ -150,39 +151,6 @@ h2 {
 
 /*sets ALL divs under class "projects" width, padding, display,margins, background color (placeholder), height,opacity, and colored drop shadow*/
 
-div.projectsGallery {
-    display: inline-block;
-    margin-left: 2%;
-}
-
-.projectImages {
-    border: 2px solid #d3d3d3;
-    border-radius: 30px;
-    margin-left: 15%;
-    margin-top: 3%;
-}
-
-#mint img {
-    height: 90%;
-    width: 90%;
-    margin-left: 15%;
-    margin-top: 20%;
-}
-
-
-
-#eas img {
-    height: 35%;
-    width: 34%;
-    float: left;
-
-}
-
-#reporter img {
-    height: 35%;
-    width: 34%;
-    margin-left: 2%;
-}
 
 /* media query syntax found at w3schools.com*/
 

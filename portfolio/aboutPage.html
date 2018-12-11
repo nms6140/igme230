@@ -7,39 +7,7 @@
     <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <style>
-        .grid {
-            display: grid;
-            height: 100vh;
-            max-width: 1200px;
-            grid-template-columns: 150px fr;
-            grid-template-rows: 10% 35% 10%;
-            grid-template-areas: "a a" "b c" "b d";
-            margin-left: auto;
-            margin-right: auto;
-        }
 
-        .grid div {
-            display: flex;
-            border: 1px dotted green;
-        }
-
-        .nav {
-            align-items: center;
-            justify-content: flex-end;
-            grid-area: a;
-        }
-
-        .graphic {
-            grid-area: b;
-        }
-
-        .hiText {
-            grid-area: c;
-
-        }
-        .media{
-            grid-area: d;
-        }
 
     </style>
 </head>
@@ -51,33 +19,24 @@
             <a class="navLinks" href="aboutPage.html"> about</a>
             <a class="navLinks" href="index.html"> work </a>
         </div>
-        <div class="graphic">
+        <div class="graphic"><img src="assets/aboutPic.png">
         </div>
-        <div class="hiText">hiText</div>
+        <div class="hiText">
+            <h1> About Me.</h1>
+        </div>
+        <div class="paragraph"><span>Hello!</span>
+            <p>I'm Nicole Simone.<br>I'm a New Media Design student at Rochester Institute of Technology. I'm passionate about vector graphics and smooth motion as well as user research and experience.</p>
+        </div>
+        <div class = "paragraph2"><span>I love</span>
+            <p>comics, food, and plants and my favorite season is fall because I own pretty much only sweaters.</p>
+        </div>
+
         <div class="media">media</div>
     </div>
     <script>
-var myVideo = document.getElementById("video1");
 
-function playPause() {
-  if (myVideo.paused)
-    myVideo.play();
-  else
-    myVideo.pause();
-}
 
-function makeBig() {
-    myVideo.width = 560;
-}
-
-function makeSmall() {
-    myVideo.width = 320;
-}
-
-function makeNormal() {
-    myVideo.width = 420;
-}
-</script>
+    </script>
 </body>
 
 </html>
