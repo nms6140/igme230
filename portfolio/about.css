@@ -10,7 +10,7 @@ body {
     height: 100vh;
     max-width: 1200px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 10% 25% 20% 10%;
+    grid-template-rows: 10% 7% 15% 10% 10%;
     grid-template-areas: "a a" "b c" "b d" "b e" "b f";
     margin-left: auto;
     margin-right: auto;
@@ -45,7 +45,7 @@ body {
 
 }
 img{
-    width: 55%;
+    width: 65%;
 }
 
 
