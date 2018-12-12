@@ -18,7 +18,7 @@ body {
 
 .grid div {
     display: flex;
-    border: 2px solid darkgray;
+    //border: 2px solid darkgray;
 }
 
 .nav {
@@ -166,6 +166,14 @@ body {
     max-width: 100%;
     padding-left:0%
 }
+    .otherProjects {
+    grid-area: i;
+    max-width:0;
+    max-height:0;
+    }
+    .otherProjects img{
+        max-width:0;
+    }
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
 
