@@ -1,10 +1,11 @@
+/*sets type*/
 body {
     font-family: 'montserrat', sans-serif;
 
 }
 
 /*wraps all content in body, sets margins*/
-
+/*sets grid columns for desktop and grid areas to be more responsive, sets margins and limits*/
 .grid {
     display: grid;
     min-height: 100vh;
@@ -15,51 +16,53 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+/*sets up flexbox and made grid visible when I was working*/
 .grid div {
     display: flex;
     //border: 2px solid darkgray;
 }
-
+/*sets padding, grid area of nav and aligns items to the edge*/
 .nav {
     padding-right: 5%;
     grid-area: a;
     align-items: center;
     justify-content: flex-end;
 }
+/*sets my name and makes it red*/
 .name{
     margin-right: 20%;
      color: #ff8080;
 }
-
+/*gives each nav link a margin, no line, adds color, and sets font size */
 .navLinks {
     margin-left: 10%;
     text-decoration: none;
     color: darkgray;
     font-size: 1.2em;
 }
-
+/*turns red on hover*/
 .navLinks:hover {
     color: #ff8080;
 }
 
-
+/*main photo perameters, sets as flexbox, and grid area*/
 .photo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     grid-area: b;
 }
-
+/*targets the main image specifically, rounded corners*/
 .photo img {
     max-width: 100%;
     border-radius: 10px;
 }
+/*in some cases it's a video instead of a photo and this is for those times*/
 .photo video{
     max-width:100%;
     border-radius: 10px;
 }
-
+/*sets title, aligns it, sets grid area, line height, and color*/
 .title {
     display: flex;
     align-items: center;
@@ -68,7 +71,7 @@ body {
     line-height: 300%;
     color: #ff8080;
 }
-
+/*sets title, aligns it, sets grid area, line height, and color*/
 .dateInfo {
     display: flex;
     align-items: flex-start;
@@ -79,14 +82,14 @@ body {
     color: darkgray;
 }
 
-
+/*sets padding of frist paragraph and a grid area*/
 .overview {
     padding: 5% 10%;
     grid-area: e;
 }
 
 
-
+/*sets perameters and grid area of first smaller photo*/
 .photo3 {
     display: flex;
     align-content: center;
@@ -94,40 +97,42 @@ body {
     grid-area: f;
     padding-top: 5%;
 }
-
+/*targets the image itself*/
 .photo3 img {
     max-width: 100%;
 
 }
+/*targets a specific image on a specific project page that needs a different perameter */
 #house{
     max-height: 80%;
 }
+/*sometimes photo 3 is actually a video, this is for then*/
 .photo3 video {
     max-width: 100%;
 }
-
+/*the second paragraph, sets padding and grid area*/
 .learned {
     padding: 17% 0 0 5%;
     grid-area: g;
 }
 
-
+/*sets grid-area of second smaller photo*/
 .photo4 {
     grid-area: h;
 }
-
+/*sometimes the photo is a video thats for this*/
 .photo4 video {
     max-width: 70%;
     padding-left:10%
 }
-
+/*targets image specifically*/
 .photo4 img{
     max-width: 80%;
     max-height: 60%;
     padding: 10%;
 }
 
-
+/*small area at bottom of page for other projects, gives grid area, flexbox, centers content*/
 .otherProjects {
     grid-area: i;
     display: flex;
@@ -135,62 +140,67 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+/*targetsimages specifically to set borders and size*/
 .otherProjects img{
     max-width: 80%;
-
     border: 2px solid darkgray;
     border-radius: 10px;
 
 }
 
 
+/*for responsive phone*/
 
 @media screen and (max-width: 725px) {
     .grid {
+/*        one column grid, rows auto*/
         display: grid;
         min-height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "a""c""b""d""e""f" "g" "h" "i";
     }
-
+/*aligns things in center*/
     .grid div{
         align-items: center;
         justify-content: center;
     }
+/*    increases nav margin*/
     .nav{
         margin-top: 5%;
     }
+/*    sets name in center*/
     .name{
     margin-right: 0%;
     align-content:center;
 }
+/*    sets photo at full*/
    .photo3{
     min-width: 100%;
     min-height:100%;
 }
+/*    sets image at no padding*/
     .photo img{
         padding:0;
     }
+/*    this specific one wasn't responding so I targeted separately*/
     #house{
         max-height:100%;
 
     }
- .otherProjects img{
-    max-width: 100%;
-    border: 2px solid darkgray;
-    border-radius: 10px;
+/* sets width of video when it's a video   */
 
-}
     .photo4 video {
     max-width: 100%;
     padding-left:0%
 }
+/*    makes other projects section go out of view*/
     .otherProjects {
     grid-area: i;
     max-width:0;
     max-height:0;
     }
+/*    same thing but targeting img specifically*/
     .otherProjects img{
         max-width:0;
     }

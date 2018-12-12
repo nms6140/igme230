@@ -1,16 +1,11 @@
+/*sets type*/
 body {
     font-family: 'montserrat', sans-serif;
 
 }
 
-/*wraps all content in body, sets margins*/
 
-div.wrapper {
-    margin-top: 2%;
-}
-
-
-/*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
+/*sets grid columns for desktop and grid areas to be more responsive, sets margins and limits*/
 .grid {
     display: grid;
     min-height: 100vh;
@@ -21,13 +16,13 @@ div.wrapper {
     margin-left: auto;
     margin-right: auto;
 }
-
+/*sets up flexbox and made grid visible when I was working*/
 .grid div {
     display: flex;
 
     //border: 1px dotted green;
 }
-
+/*sets padding, grid area of nav and aligns items to the edge*/
 .nav {
     align-items: center;
     justify-content: flex-end;
@@ -35,20 +30,22 @@ div.wrapper {
     padding-right: 5%;
     display: flex;
 }
+/*sets my name and makes it red*/
 .name{
     margin-right: 20%
 }
+/*gives each nav link a margin, no line, adds color, and sets font size */
 .navLinks {
     margin-left: 10%;
     text-decoration: none;
     color: darkgray;
     font-size: 1.2em;
 }
-
+/*turns red on hover*/
 .navLinks:hover {
     color: #ff8080;
 }
-/* Dropdown Button */
+/* Dropdown Button -- code from w3 schools*/
 
 /* Dropdown button on hover & focus */
 .menubox:hover {
@@ -78,31 +75,24 @@ div.wrapper {
   text-decoration: none;
   display: block;
 }
-
-/* Change color of dropdown links on hover */
-
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-
-
+/*assigns grid area to big video graphic and centers*/
 .graphic {
     grid-area: b;
-    align-items: baseline;
     align-items: center;
 }
-
+/*targets video specifically*/
 video {
     max-width: 100%;
     border-radius: 10px
 }
-
+/*assigns grid area, padding, and sets items to left of main text */
 .hiText {
     grid-area: c;
     padding-left: 10%;
     align-items: flex-end;
 }
 
-/*sets margins, padding, and color of h1 (my name)*/
+/*sets font size, padding, margins, and color to my name*/
 
 .actualText {
     font-size: 150%;
@@ -113,7 +103,7 @@ video {
     color: #ff8080;
     margin-bottom: 0;
 }
-
+/*sets margins and color of h1 (my name)*/
 h1 {
     margin-top: 0;
     color: #ff8080;
@@ -128,7 +118,7 @@ h2 {
 
 }
 
-
+/*sets grid area, padding, and placing of first image link on left*/
 .project1 {
     grid-area: e;
     padding: 0 10% 0 20%;
@@ -136,20 +126,23 @@ h2 {
     justify-content: flex-end;
     align-items: center;
 }
+/*on hover the description shows*/
 .project1:hover .overlay{
     opacity:1;
 }
+/*targets image for elements*/
 img {
     max-width: 100%;
     border: 2px solid darkgray;
     border-radius: 10px;
     transition: all .2s ease-in-out;
 }
-
+/*on hover the image sets bigger*/
 img:hover{
    transform: scale(1.1);
 
 }
+/*sets what shows up/how when hovers*/
 .project1 .overlay{
     position: absolute;
     background-color: aliceblue;
@@ -161,13 +154,14 @@ img:hover{
 }
 
 
-
+/*sets all elements for first image on right*/
 .project2 {
     grid-area: f;
     float: right;
     display: flex;
     padding: 0 20% 0 10%;
 }
+/*sets what shows/how on hover*/
 .project2 .overlay{
     position: absolute;
     background-color: aliceblue;
@@ -179,11 +173,12 @@ img:hover{
     margin-top: 8%;
     z-index: 1;
 }
+/*makes it show up on hover*/
 .project2:hover .overlay{
     opacity:1;
 
 }
-
+/*sets elements for 2nd image link on the left*/
 .project3 {
     grid-area: g;
     display: flex;
@@ -191,6 +186,7 @@ img:hover{
     align-items: center;
     padding: 0 10% 0 20%;
 }
+/*sets what shows up and how when hover*/
 .project3 .overlay{
     position: absolute;
     background-color: aliceblue;
@@ -200,15 +196,17 @@ img:hover{
     display: flex;
     z-index: 1;
 }
+/*makes it show up on hover*/
 .project3:hover .overlay{
     opacity:1;
 
 }
-
+/*sets elements for 2nd image link on right*/
 .project4 {
     grid-area: h;
     padding: 10%
 }
+/*sets what shows up and how when hover*/
 .project4 .overlay{
     position: absolute;
     background-color: aliceblue;
@@ -220,72 +218,52 @@ img:hover{
     justify-content: flex-end;
     z-index: 1;
 }
+/*makes it show up on hover*/
 .project4:hover .overlay{
     opacity:1;
 
 }
-
+/*same but for video specifically */
 .project4 video {
     max-width: 90%;
     transition: all .2s ease-in-out;
 }
+/*makes it show up on hover for video*/
 .project4 video:hover{
     transform: scale(1.1);
 }
 
-.project5 {
-    grid-area: i;
-    padding: 0 20% 0 10%;
-}
-
-.project6 {
-    grid-area: j;
-}
-
-
-
-
-/*div that holds h1 and h2 */
-
-
-
-
-/*section for divs that make up project gallery, sets padding and margin*/
-
-/*sets font size, padding, margins, and color of title "projects"*/
-
-/*sets ALL divs under class "projects" width, padding, display,margins, background color (placeholder), height,opacity, and colored drop shadow*/
-
-
-/* media query syntax found at w3schools.com*/
-
+/*sets for phone responsiveness*/
 @media screen and (max-width: 725px) {
     .grid {
+/*        one column grid*/
         display: grid;
         min-height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "a""c""d""b""e""f""g""h""i""j";
     }
+/*    increase nav margin*/
     .nav{
         margin-top: 5%;
 }
+/*    make name center*/
     .name{
     margin-right: 0%;
     align-content:center;
 }
-
+/*centers text*/
     .hiText {
         margin-top: 10%;
         margin-left: 0;
         justify-content: center;
     }
-
+/*centers my name under text*/
     .actualText {
         margin-bottom: 5%;
         justify-content: center;
     }
-
+/*changes padding of projects*/
     .project1{
         padding:10% 0 0 0;
     }

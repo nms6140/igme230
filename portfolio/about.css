@@ -3,7 +3,7 @@ body {
 
 }
 
-/*wraps all content in body, sets margins*/
+/*wraps all content in grid, sets margins, sets grid areas  for responsivity*/
 
 .grid {
     display: grid;
@@ -11,17 +11,19 @@ body {
     max-width: 1200px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 7% 15% 10% 10%;
-    grid-template-areas: "a a" "b c" "b d" "b e" "b f";
+    grid-template-areas: "a a""b c""b d""b e""b f";
     margin-left: auto;
     margin-right: auto;
 }
 
+/*had border to see what I was doing, display flex for flexbox use*/
 .grid div {
     display: flex;
     //border: 2px solid darkgray;
 
 }
 
+/*puts nav  grid area as a, nav items at right side*/
 .nav {
     padding-right: 5%;
     align-items: center;
@@ -29,49 +31,42 @@ body {
     grid-area: a;
 }
 
+/*each link has a left margin of their own, no line under link, sets color, and fontsize*/
 .navLinks {
     margin-left: 10%;
     text-decoration: none;
     color: darkgray;
     font-size: 1.2em;
 }
+
+/*on hover navigation links turn red*/
 .navLinks:hover {
     color: #ff8080;
 }
-
+/*makes div holding picture grid area b, flexbox, and centers all content*/
 .graphic {
     grid-area: b;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.hiText{
-    grid-area: c;
-}
-.paragraph{
-    grid-area: d;
-}
-.paragraph2{
-    grid-area: e;
-}
-.media{
-    grid-area: f;
-}
-
-img{
+/*sets image width*/
+img {
     width: 65%;
 }
-
-
-
-/*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
-
-/*div that holds h1, exercises button, and h2 */
-
-/*sets margins, padding, and color of h1 (my name)*/
-
-
+/*sets main title as grid area c*/
+.hiText {
+    grid-area: c;
+}
+/*sets 1st paragraph as grid area d*/
+.paragraph {
+    grid-area: d;
+}
+/*sets 2nd paragraph as grid area e*/
+.paragraph2 {
+    grid-area: e;
+}
 h1 {
     color: #f27575;
 }
@@ -79,52 +74,51 @@ h1 {
 p {
     font-size: 1em;
     line-height: 150%;
-    color:gray
+    color: gray
 }
-
-
-/*sets margins, padding, size, and color of h2 (class name)*/
-
-.media{
-    display:flex;
+/*sets media links as grid area f*/
+.media {
+    grid-area: f;
+    display: flex;
     align-items: flex-start;
 }
-.media a{
+
+/*sets media links padding and to have no line and sets color*/
+.media a {
     padding-right: 10%;
     padding-left: 5%;
     text-decoration: none;
-    color:darkgray;
+    color: darkgray;
 }
-.media a:hover{
+/*on hover media links turn red*/
+.media a:hover {
     color: #ff8080;
 }
-
-/*section for divs that make up project gallery, sets padding and margin*/
-
-/*sets font size, padding, margins, and color of title "projects"*/
-
-/*sets ALL divs under class "projects" width, padding, display,margins, background color (placeholder), height,opacity, and colored drop shadow*/
+/*responsive for mobile phones*/
 @media screen and (max-width: 725px) {
     .grid {
+/*        sets new grid to 1 column*/
         display: grid;
         min-height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "a""c""b""d""e""f";
     }
-
-    .grid div{
+/*center aligns everything*/
+    .grid div {
         align-items: center;
         justify-content: center;
     }
-    .nav{
+/*increases nav margin*/
+    .nav {
         margin-top: 5%;
     }
-    p{
+/*centers text and makes bigger*/
+    p {
         text-align: center;
         font-size: 1.5em;
     }
-
-    .media{
+/*makes text bigger*/
+    .media {
         font-size: 1.5em;
     }
