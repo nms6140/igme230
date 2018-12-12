@@ -50,10 +50,9 @@ div.wrapper {
     align-items: center;
 }
 
- video {
+video {
     max-width: 100%;
     border-radius: 10px
-
 }
 
 .hiText {
@@ -67,7 +66,7 @@ div.wrapper {
 .actualText {
     font-size: 150%;
     align-items: flex-start;
-      grid-area: d;
+    grid-area: d;
     padding-left: 10%;
     margin-top: 0;
     color: #ff8080;
@@ -90,15 +89,16 @@ h2 {
 
 
 
-.project1{
-     grid-area: e;
+.project1 {
+    grid-area: e;
     padding: 0 10%;
     display: flex;
-   justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
 }
- img {
-    max-width:80%;
+
+img {
+    max-width: 80%;
     border: 2px solid darkgray;
     border-radius: 10px;
 }
@@ -107,7 +107,7 @@ h2 {
 
 .project2 {
     grid-area: f;
-      padding: 0 10%;
+    padding: 0 10%;
     display: flex;
 }
 
@@ -116,16 +116,16 @@ h2 {
     grid-area: g;
     padding: 0 10%;
     display: flex;
-   justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .project4 {
     grid-area: h;
-    padding:10%
+    padding: 10%
 }
 
-.project4 video{
+.project4 video {
     max-width: 80%;
 }
 

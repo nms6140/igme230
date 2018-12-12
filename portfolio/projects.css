@@ -9,16 +9,16 @@ body {
     display: grid;
     min-height: 100vh;
     max-width: 1200px;
-    grid-template-columns: 30% auto auto;
-    grid-template-rows: 10% 25% 15% 25% 25% 25%;
-    grid-template-areas: "a a a" "b b c" "b b d" "e f g" "h h i" "j k l";
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 10% 25% 15% 30% 25% 25%;
+    grid-template-areas: "a a a" "b b c" "b b d" "e e f" "h g g " "i j k";
     margin-left: auto;
     margin-right: auto;
 }
 
 .grid div {
     display: flex;
-    border: 1px dotted green;
+    //border: 2px solid darkgray;
 }
 
 .nav {
@@ -38,53 +38,106 @@ body {
 }
 
 .photo {
-
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
     grid-area: b;
+}
+.photo img{
+    max-width:100%;
+    border-radius: 10px;
 }
 
 .title {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: c;
+    line-height: 300%;
+    color: #ff8080;
 }
 
-.date/info {
+.dateInfo {
+     display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align:center;
     grid-area: d;
+    line-height: 200%;
+    color:darkgray;
 }
+
 
 .overview {
-
+    padding: 10%;
     grid-area: e;
 }
 
-.photo2 {
-    grid-area: f;
-}
+
 
 .photo3 {
-    grid-area: g;
+    display: flex;
+    align-content:center;
+    justify-content:center;
+    grid-area: f;
+    padding-top:5%;
+}
+.photo3 img{
+    max-width: 100%;
+
 }
 
 .learned {
 
-    grid-area: h;
+    grid-area: g;
 }
 
 
 .photo4 {
-    grid-area: i;
+    grid-area: h;
 }
 
 .otherProjects1 {
-    grid-area: j;
-}
+    grid-area: i;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 
+}
+.otherProjects1 img{
+      max-width: 80%;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
 .otherProjects2 {
-    grid-area: k;
+    grid-area: j;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding-left: 20%;
+
+
 }
 
-.otherProjects3 {
-    grid-area: l;
+.otherProjects2 img{
+      max-width: 100%;
+    border: 2px solid darkgray;
+    border-radius: 10px;
 }
+.otherProjects3 {
+    grid-area: k;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding-left:30%
+}
+.otherProjects3 img{
+      max-width: 85%;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
+
+
 
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
@@ -99,18 +152,7 @@ body {
 /*sets margins, padding, and color of h1 (my name)*/
 
 
-h1 {
-    color: #f27575;
-    margin-bottom: 10%;
-    text-align: center;
-}
 
-p {
-    font-size: .9em;
-    text-align: center;
-    margin: 10%;
-    line-height: 25px;
-}
 
 /*sets margins, padding, size, and color of h2 (class name)*/
 
