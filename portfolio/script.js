@@ -6,6 +6,6 @@ $(function(){
 //onclick = $(function()){
                      //$(this).next(".submenu").slideToggle("slow")
                     // });
-$(".menuitem").click(function(){
+$(".menubox").click(function(){
     $( this ).next(".submenu").slideToggle("slow")
 });
