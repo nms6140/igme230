@@ -49,28 +49,20 @@ div.wrapper {
     color: #ff8080;
 }
 /* Dropdown Button */
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.menubox:hover {
   background-color: #2980B9;
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.menubox {
   position: relative;
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.submenu {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -80,7 +72,7 @@ div.wrapper {
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.submenu a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -88,10 +80,10 @@ div.wrapper {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+
 
 .graphic {
     grid-area: b;
@@ -144,7 +136,9 @@ h2 {
     justify-content: flex-end;
     align-items: center;
 }
-
+.project1:hover .overlay{
+    opacity:1;
+}
 img {
     max-width: 100%;
     border: 2px solid darkgray;
@@ -156,7 +150,15 @@ img:hover{
    transform: scale(1.1);
 
 }
-
+.project1 .overlay{
+    position: absolute;
+    background-color: aliceblue;
+    width: 40%;
+    height:2%;
+    opacity:0;
+    display: flex;
+    z-index:1;
+}
 
 
 
@@ -166,7 +168,21 @@ img:hover{
     display: flex;
     padding: 0 20% 0 10%;
 }
+.project2 .overlay{
+    position: absolute;
+    background-color: aliceblue;
+    width: 40%;
+    height:2%;
+    opacity:0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8%;
+    z-index: 1;
+}
+.project2:hover .overlay{
+    opacity:1;
 
+}
 
 .project3 {
     grid-area: g;
@@ -175,10 +191,38 @@ img:hover{
     align-items: center;
     padding: 0 10% 0 20%;
 }
+.project3 .overlay{
+    position: absolute;
+    background-color: aliceblue;
+    width: 40%;
+    height:2%;
+    opacity:0;
+    display: flex;
+    z-index: 1;
+}
+.project3:hover .overlay{
+    opacity:1;
+
+}
 
 .project4 {
     grid-area: h;
     padding: 10%
+}
+.project4 .overlay{
+    position: absolute;
+    background-color: aliceblue;
+    width: 40%;
+    height:2%;
+     margin-top: 8%;
+    opacity:0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+.project4:hover .overlay{
+    opacity:1;
+
 }
 
 .project4 video {
