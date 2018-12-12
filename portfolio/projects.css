@@ -108,12 +108,15 @@ body {
 .otherProjects {
     grid-area: i;
     display: flex;
-    padding-left: 20%;
+    padding-left: 10%;
     align-items: center;
     justify-content: space-between;
 }
 .otherProjects img{
-    max-width: 100%;
+    max-width: 80%;
+
+    border: 2px solid darkgray;
+    border-radius: 10px;
 
 }
 
