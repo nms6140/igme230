@@ -122,3 +122,47 @@ p {
 }
 
 /*sets margins, padding, size, and color of h2 (class name)*/
+
+@media screen and (max-width: 725px) {
+    .grid {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "a""b""c""e""d""f""h""g" "i";
+    }
+    .nav{
+        margin-top: 5%;
+    }
+
+    .contacts{
+        padding-left: 5%;
+
+    }
+
+    .work1 {
+    padding-top: 5%;
+}
+    .education{
+        padding: 5% 0 0 5%;
+    }
+
+    .work2{
+        padding-top: 5%;
+    }
+     .work3{
+        padding-top: 5%;
+    }
+      .skills{
+        padding: 5% 0 0 5%;
+    }
+
+    .tools{
+        padding: 5% 0 0 5%;
+    }
+
+    .row2{
+        padding: 7%;
+
+    }
+

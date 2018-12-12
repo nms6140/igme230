@@ -24,7 +24,7 @@ div.wrapper {
 
 .grid div {
     display: flex;
-    border: 1px dotted green;
+    //border: 1px dotted green;
 }
 
 .nav {
@@ -156,7 +156,7 @@ img {
 
 /* media query syntax found at w3schools.com*/
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 725px) {
     .grid {
         display: grid;
         min-height: 100vh;
@@ -164,14 +164,32 @@ img {
         grid-template-rows: auto;
         grid-template-areas: "a""c""d""b""e""f""g""h""i""j";
     }
+    .nav{
+        margin-top: 5%;
+}
 
     .hiText {
+        margin-top: 10%;
         margin-left: 0;
         justify-content: center;
     }
 
     .actualText {
+        margin-bottom: 5%;
         justify-content: center;
+    }
+
+    .project1{
+        padding:10% 0 0 0;
+    }
+     .project2{
+       padding:5% 0 0 0;
+    }
+    .project3{
+        padding:5% 0 0 0;
+    }
+    .project4{
+        padding:5% 0 0 0;
     }
 
 }

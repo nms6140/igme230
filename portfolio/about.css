@@ -18,6 +18,7 @@ body {
 
 .grid div {
     display: flex;
+    //border: 2px solid darkgray;
 
 }
 
@@ -44,6 +45,18 @@ body {
     justify-content: center;
     align-items: center;
 
+}
+.hiText{
+    grid-area: c;
+}
+.paragraph{
+    grid-area: d;
+}
+.paragraph2{
+    grid-area: e;
+}
+.media{
+    grid-area: f;
 }
 img{
     width: 65%;
@@ -89,3 +102,27 @@ p {
 /*sets font size, padding, margins, and color of title "projects"*/
 
 /*sets ALL divs under class "projects" width, padding, display,margins, background color (placeholder), height,opacity, and colored drop shadow*/
+@media screen and (max-width: 725px) {
+    .grid {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "a""c""b""d""e""f";
+    }
+
+    .grid div{
+        align-items: center;
+        justify-content: center;
+    }
+    .nav{
+        margin-top: 5%;
+    }
+    p{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .media{
+        font-size: 1.5em;
+    }

@@ -18,7 +18,7 @@ body {
 
 .grid div {
     display: flex;
-    //border: 2px solid darkgray;
+    border: 2px solid darkgray;
 }
 
 .nav {
@@ -136,7 +136,36 @@ body {
 
 
 
+@media screen and (max-width: 725px) {
+    .grid {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "a""c""b""d""e""f" "g" "h" "i";
+    }
 
+    .grid div{
+        align-items: center;
+        justify-content: center;
+    }
+    .nav{
+        margin-top: 5%;
+    }
+    .otherProjects{
+
+
+    }
+ .otherProjects img{
+    max-width: 100%;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+
+}
+    .photo4 video {
+    max-width: 100%;
+    padding-left:0%
+}
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
 
