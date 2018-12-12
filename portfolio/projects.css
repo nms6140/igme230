@@ -32,6 +32,7 @@ body {
     margin-left: 10%;
     text-decoration: none;
     color: darkgray;
+    font-size: 1.2em;
 }
 
 .navLinks:hover {
@@ -47,6 +48,10 @@ body {
 
 .photo img {
     max-width: 100%;
+    border-radius: 10px;
+}
+.photo video{
+    max-width:100%;
     border-radius: 10px;
 }
 
@@ -89,6 +94,9 @@ body {
     max-width: 100%;
 
 }
+.photo3 video {
+    max-width: 100%;
+}
 
 .learned {
     padding: 17% 0 0 5%;
@@ -97,12 +105,18 @@ body {
 
 
 .photo4 {
-    padding-left: 10%;
     grid-area: h;
 }
 
 .photo4 video {
-    max-width: 90%;
+    max-width: 70%;
+    padding-left:10%
+}
+
+.photo4 img{
+    max-width: 80%;
+    max-height: 60%;
+    padding: 10%;
 }
 
 .otherProjects {

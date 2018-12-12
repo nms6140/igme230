@@ -5,21 +5,99 @@ body {
 
 /*wraps all content in body, sets margins*/
 
-div.wrapper {
-    margin-top: 2%;
+.grid {
+    display: grid;
+    min-height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+    grid-template-areas: "a a""b c""d e""f g""h i";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid div {
+    display: flex;
+    //border: 1px dotted green;
+
+}
+
+.nav {
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: a;
+    padding-right: 5%;
+
+}
+
+.navLinks {
+    margin-left: 10%;
+    text-decoration: none;
+    color: darkgray;
+    font-size: 1.2em;
+}
+
+.navLinks:hover {
+    color: #ff8080;
+}
+
+.nameMajor {
+    text-align: left;
+    grid-area: b;
+    display:flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.contacts {
+    grid-area: c;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.work1 {
+    grid-area: d;
+    padding-left: 5%;
+}
+.education {
+    grid-area: e;
+   justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.work2 {
+    grid-area: f;
+    padding-left: 5%;
+}
+.skills {
+    grid-area: g;
+     display: flex;
+    justify-content: flex-start;
+     align-items: flex-start;
+    margin: 0;
+}
+
+.work3 {
+    grid-area: h;
+    padding-left: 5%;
+}
+
+.tools {
+    grid-area: i;
+    display: flex;
+    justify-content: flex-start;
+     align-items: flex-start;
+}
+.row2{
+    padding: 13% 0 0 5%
 }
 
 
 /*sets profile photo in place, sets margins, and percentage heights so more flexible to scaling, makes radius circle and adds colored drop shadow*/
-.nav{
-    padding-right: 5%
-}
 
-.navLinks {
-  margin-left: 10%;
-    text-decoration: none;
-    color: darkgray;
-}
+
 
 
 
@@ -28,36 +106,19 @@ div.wrapper {
 
 
 /*sets margins, padding, and color of h1 (my name)*/
-#aboutText{
-    margin-right:10%;
-    margin-left:20%;
-}
+
 
 h1 {
-    color:#f27575;
-    margin-bottom:10%;
-    text-align: center;
+    color: #f27575;
+    margin-bottom: 10%;
+    line-height: 50px;
 }
 
-p{
+p {
     font-size: .9em;
-    text-align: center;
-    margin: 10%;
+    text-align: left;
+
     line-height: 25px;
 }
 
 /*sets margins, padding, size, and color of h2 (class name)*/
-
-
-
-#EAS img{
-    margin-left: 10%;
-    margin-right: 10%;
-     height: 80%;
-    width: 80%;
-
-}
-
-
-
-
