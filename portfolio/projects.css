@@ -38,6 +38,9 @@ body {
 .navLinks:hover {
     color: #ff8080;
 }
+.interactive{
+    max-width:100%;
+}
 
 .photo {
     display: flex;
