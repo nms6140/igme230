@@ -79,3 +79,6 @@ div.projects {
     filter: drop-shadow(2px 8px 1px #1B998B);
 
 }
+#1 {
+    padding-right:0;
+}
