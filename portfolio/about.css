@@ -58,6 +58,7 @@ body {
 .media{
     grid-area: f;
 }
+
 img{
     width: 65%;
 }
@@ -90,6 +91,7 @@ p {
 }
 .media a{
     padding-right: 10%;
+    padding-left: 5%;
     text-decoration: none;
     color:darkgray;
 }
