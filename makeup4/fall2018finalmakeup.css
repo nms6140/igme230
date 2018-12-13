@@ -1,0 +1,75 @@
+/*****************
+General Formatting
+******************/
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section, header, footer {
+    padding: .5rem;
+}
+
+.menu {
+    width: 100%;
+    padding: .5rem;
+    background-color: #aaa;
+    margin: 1px;
+}
+
+.submenu {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    background-color: #eee;
+    padding-left: .5rem;
+}
+
+/**************
+Your Formatting
+***************/
+#pagegrid{
+    display:grid;
+    grid-template-rows: 80px auto auto 30px;
+    grid-template-columns: 200px 2fr 1fr;
+    grid-template-areas: "a a a" "b c d" "b c e" "f f f";
+    width: 95vw;
+    max-width: 1100px;
+    min-height: 100vh;
+}
+header {
+    grid-area: a;
+}
+nav {
+    grid-area: b;
+}
+
+#story {
+    grid-area: c;
+}
+
+#source {
+    grid-area: d;
+}
+
+#extracredit {
+    grid-area: e;
+}
+
+footer {
+    grid-area: f;
+}
