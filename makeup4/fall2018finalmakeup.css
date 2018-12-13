@@ -55,10 +55,18 @@ Your Formatting
 header {
     grid-area: a;
     background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 nav {
     grid-area: b;
     background-color: lavenderblush;
+}
+li:hover {
+    background-color: lightpink;
+    color: magenta;
+    cursor: pointer;
 }
 
 #story {
@@ -79,6 +87,9 @@ nav {
 footer {
     grid-area: f;
     background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 600px){
