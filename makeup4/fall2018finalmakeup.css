@@ -50,26 +50,42 @@ Your Formatting
     width: 95vw;
     max-width: 1100px;
     min-height: 100vh;
+    margin: auto;
 }
 header {
     grid-area: a;
+    background-color: lightblue;
 }
 nav {
     grid-area: b;
+    background-color: lavenderblush;
 }
 
 #story {
     grid-area: c;
+    background-color: lightcyan;
 }
 
 #source {
     grid-area: d;
+    background-color: lightsalmon;
 }
 
 #extracredit {
     grid-area: e;
+
 }
 
 footer {
     grid-area: f;
+    background-color: lightblue;
+}
+
+@media (max-width: 600px){
+    #pagegrid{
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto auto auto auto 30px;
+        grid-template-areas: "a" "c" "d" "e" "b" "f";
+    }
 }
